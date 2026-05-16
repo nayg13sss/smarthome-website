@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Gate — ระบบประตูรีโมทอัจฉริยะ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f1a; color: white; }
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #1DB954;
+    }
+    header h1 { color: #1DB954; font-size: 2.5em; }
+    header p { color: #aaa; margin-top: 8px; }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #16213e, #0f0f1a);
+    }
+    .hero h2 { font-size: 2em; margin-bottom: 16px; }
+    .hero p { color: #aaa; font-size: 1.1em; max-width: 600px; margin: 0 auto 32px; }
+    .btn {
+      background: #1DB954;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 60px 20px;
+    }
+    .card {
+      background: #16213e;
+      border-radius: 16px;
+      padding: 32px;
+      width: 280px;
+      text-align: center;
+      border: 1px solid #1DB95430;
+    }
+    .card .icon { font-size: 3em; margin-bottom: 16px; }
+    .card h3 { color: #1DB954; margin-bottom: 8px; }
+    .card p { color: #aaa; font-size: 0.95em; }
+    .pricing {
+      text-align: center;
+      padding: 60px 20px;
+      background: #16213e;
+    }
+    .pricing h2 { font-size: 2em; margin-bottom: 32px; }
+    .price-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+    }
+    .price-card {
+      background: #0f0f1a;
+      border-radius: 16px;
+      padding: 32px;
+      width: 280px;
+      border: 2px solid #1DB954;
+    }
+    .price-card h3 { color: #1DB954; font-size: 1.5em; margin-bottom: 8px; }
+    .price-card .price { font-size: 2.5em; font-weight: bold; margin: 16px 0; }
+    .price-card ul { list-style: none; text-align: left; color: #aaa; }
+    .price-card ul li { padding: 6px 0; }
+    .price-card ul li::before { content: "✅ "; }
+    .contact {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .contact h2 { font-size: 2em; margin-bottom: 16px; }
+    .contact p { color: #aaa; margin-bottom: 24px; }
+    .contact a {
+      background: #1DB954;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    footer {
+      background: #16213e;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+      border-top: 1px solid #1DB95430;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🏠 Smart Gate</h1>
+  <p>ระบบประตูรีโมทอัจฉริยะ ควบคุมผ่านมือถือได้ทุกที่</p>
+</header>
+
+<section class="hero">
+  <h2>ควบคุมประตูบ้านคุณ<br>ได้จากทุกที่ทั่วโลก</h2>
+  <p>ไม่ต้องอยู่บ้าน ก็สั่งเปิด-ปิดประตูได้ทันที ปลอดภัย เชื่อถือได้ รองรับทั้ง Android และ iOS</p>
+  <a href="#contact" class="btn">ติดต่อสอบถาม</a>
+</section>
+
+<section class="features">
+  <div class="card">
+    <div class="icon">📱</div>
+    <h3>ควบคุมผ่านแอป</h3>
+    <p>สั่งเปิด-ปิดประตูผ่านสมาร์ทโฟน Android และ iOS ได้ทันที</p>
+  </div>
+  <div class="card">
+    <div class="icon">🔔</div>
+    <h3>แจ้งเตือนทันที</h3>
+    <p>รับการแจ้งเตือนทุกครั้งที่มีการเปิด-ปิดประตู แม้แอปปิดอยู่</p>
+  </div>
+  <div class="card">
+    <div class="icon">🔒</div>
+    <h3>ปลอดภัยสูง</h3>
+    <p>ระบบรหัสผ่านและการเข้ารหัสข้อมูล ป้องกันการเข้าถึงโดยไม่ได้รับอนุญาต</p>
+  </div>
+  <div class="card">
+    <div class="icon">💡</div>
+    <h3>ควบคุมไฟหน้าบ้าน</h3>
+    <p>เปิด-ปิดไฟหน้าบ้านได้จากแอป ประหยัดไฟ สะดวกสบาย</p>
+  </div>
+  <div class="card">
+    <div class="icon">⚙️</div>
+    <h3>ติดตั้งง่าย</h3>
+    <p>ติดตั้งเข้ากับระบบประตูเดิมได้ทันที ไม่ต้องเปลี่ยนมอเตอร์</p>
+  </div>
+  <div class="card">
+    <div class="icon">🛠️</div>
+    <h3>บริการหลังการขาย</h3>
+    <p>ทีมช่างพร้อมให้บริการและดูแลระบบตลอดอายุการใช้งาน</p>
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>แพ็กเกจราคา</h2>
+  <div class="price-cards">
+    <div class="price-card">
+      <h3>Smart Receiver</h3>
+      <p style="color:#aaa">สำหรับประตูที่บอร์ดยังดีอยู่</p>
+      <div class="price">฿2,500</div>
+      <ul>
+        <li>ควบคุมผ่านแอปมือถือ</li>
+        <li>แจ้งเตือนทันที</li>
+        <li>ควบคุมไฟหน้าบ้าน</li>
+        <li>รับประกัน 1 ปี</li>
+        <li>ค่าบริการรายปี ฿500</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <h3>Smart Controller</h3>
+      <p style="color:#aaa">แทนบอร์ดควบคุมเดิม</p>
+      <div class="price">฿3,500</div>
+      <ul>
+        <li>ทุกอย่างใน Smart Receiver</li>
+        <li>แทนบอร์ดควบคุมเดิมได้เลย</li>
+        <li>เซ็นเซอร์ลิมิตครบชุด</li>
+        <li>โฟโตเซ็นเซอร์</li>
+        <li>ค่าบริการรายปี ฿500</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>ติดต่อเรา</h2>
+  <p>สนใจติดตั้งระบบ Smart Gate ติดต่อได้เลยครับ</p>
+  <a href="tel:+66XXXXXXXXX">📞 โทรหาเรา</a>
+</section>
+
+<footer>
+  <p>© 2026 Smart Gate — ระบบประตูรีโมทอัจฉริยะ | พัฒนาโดยคนไทย สำหรับคนไทย</p>
+</footer>
+
+</body>
+</html>
